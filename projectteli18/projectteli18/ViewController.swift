@@ -158,7 +158,7 @@ class ViewController: UIViewController, WCSessionDelegate {
                 }
             }
         }.resume()
-        if activityRunning == false {
+        if activityRunning == false && activityId != 0 {
             activityRunning = true
             postButton.setTitle("Stop Activity", for: .normal)
         }
